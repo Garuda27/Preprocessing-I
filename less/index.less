@@ -57,3 +57,168 @@ html, body {
     height: 100%;
 }
 
+/*-------------------------------------------------*/
+div{
+	width:100%;
+}
+body{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	@media (max-width:500px){
+		flex-direction:column;
+		justify-content: space-between;
+	}
+}
+nav{
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-end;
+	
+	
+	a{
+		text-decoration: none;
+		padding: 1rem;
+		color: gray;
+	}
+	@media (max-width:500px){
+		flex-direction:column;
+		text-align: center;
+		a{
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		color: black;
+		background-color:lightgray;
+		}
+	}
+}
+
+.intro{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content:center;
+	background-color: lightgray;
+	width:90%;
+	height: 40%;
+	@media (max-width:500px){
+		width:100%;
+		background-color:gray;
+	}
+	.image{
+		height:45%;
+		width:20%;
+		@media (max-width:500px){
+			display:none;
+		}
+	}
+	.introtext{
+		display:flex;
+		flex-direction:column;
+		align-items: center;
+		justify-content:center;
+	}
+	button{
+		border: 1px solid black;
+		background-color: darkgray;
+		margin: 1.5rem;
+		padding: .75rem;
+	}
+	h1{
+		font-size: 2.5rem;
+	}
+}
+.middle{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	@media (max-width:500px){
+		flex-direction:column;
+	}
+	section{
+		width: 50%;
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+		@media (max-width:500px){
+			width:100%;
+		}
+		h2{
+			font-size: 1.2rem;
+		}
+		h3{
+			font-size: 1.4rem;
+		}
+		.hire{
+			width: 40%;
+			@media (max-width:500px){
+				width:100%;
+			}
+		}
+		li{
+			border: 1px dotted black;
+		}
+	}
+	.skills{
+		height: 100%;
+		@media (max-width:500px){
+			height: 10rem;
+			width:100%;
+			background-color:lightgray;
+		}
+		
+	.why{
+		@media (max-width:500px){
+			background-color:gray;
+		}
+	}
+	}
+}
+.history{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content:center;
+	@media (max-width:500px){
+		padding-top: 2rem;
+		background-color:lightgray;
+	}
+	h2{
+		font-size:1.5rem;
+	}
+	table{
+		width: 90%;
+		font-size: 1.25rem;
+		@media (max-width:500px){
+			width:100%;
+			background-color: white;
+		}
+	}
+	td{
+		height: 2rem;
+		border-left: 1px solid black;
+		border-top: 1px solid black;
+	}
+	table, th {
+		border: 1px solid black;
+	}
+	table, th, td, h2{
+		color: black;
+	}
+	.color{
+		background-color: lightgray;
+		@media (max-width:500px){
+			background-color:gray;
+		}
+	}
+
+}
+footer{
+	width:100%;
+	text-align: center;
+	height:8%;
+	@media (max-width:500px){
+		height:10px;
+	}
+}
