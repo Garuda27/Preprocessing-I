@@ -1,1 +1,324 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/*-------------------------------------------------*/
+div {
+  width: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  body {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+nav a {
+  text-decoration: none;
+  padding: 1rem;
+  color: gray;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav a {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: black;
+    background-color: lightgray;
+  }
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  width: 90%;
+  height: 40%;
+}
+@media (max-width: 500px) {
+  .intro {
+    width: 100%;
+    background-color: gray;
+  }
+}
+.intro .image {
+  height: 45%;
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .intro .image {
+    display: none;
+  }
+}
+.intro .introtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro button {
+  border: 1px solid black;
+  background-color: darkgray;
+  margin: 1.5rem;
+  padding: 0.75rem;
+}
+.intro h1 {
+  font-size: 2.5rem;
+}
+.middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .middle {
+    flex-direction: column;
+  }
+}
+.middle section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .middle section {
+    width: 100%;
+  }
+}
+.middle section h2 {
+  font-size: 1.2rem;
+}
+.middle section h3 {
+  font-size: 1.4rem;
+}
+.middle section .hire {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .middle section .hire {
+    width: 100%;
+  }
+}
+.middle section li {
+  border: 1px dotted black;
+}
+.middle .skills {
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .middle .skills {
+    height: 10rem;
+    width: 100%;
+    background-color: lightgray;
+  }
+}
+@media (max-width: 500px) {
+  .middle .skills .why {
+    background-color: gray;
+  }
+}
+.history {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .history {
+    padding-top: 2rem;
+    background-color: lightgray;
+  }
+}
+.history h2 {
+  font-size: 1.5rem;
+}
+.history table {
+  width: 90%;
+  font-size: 1.25rem;
+}
+@media (max-width: 500px) {
+  .history table {
+    width: 100%;
+    background-color: white;
+  }
+}
+.history td {
+  height: 2rem;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+.history table,
+.history th {
+  border: 1px solid black;
+}
+.history table,
+.history th,
+.history td,
+.history h2 {
+  color: black;
+}
+.history .color {
+  background-color: lightgray;
+}
+@media (max-width: 500px) {
+  .history .color {
+    background-color: gray;
+  }
+}
+footer {
+  width: 100%;
+  text-align: center;
+  height: 8%;
+}
+@media (max-width: 500px) {
+  footer {
+    height: 10px;
+  }
+}
